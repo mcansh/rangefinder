@@ -84,10 +84,15 @@ main
   background: $off-white
   min-height: 100vh
   margin-top: 80px
+  @media (max-width: 550px)
+    padding: 0px !important
+    width: 100vw
   .row
     display: flex
     justify-content: center
     align-items: center
+    @media (max-width: 550px)
+      flex-direction: column
     .img
       margin: 10px
       height: 250px
@@ -95,6 +100,8 @@ main
       cursor: pointer
       &:hover
         opacity: .8
+      @media (max-width: 550px)
+        margin: 10px 0
       figcaption
         display: flex
         flex-direction: column
@@ -127,19 +134,28 @@ main
           padding-bottom: 0px
     .one-third
       width: 33vw
+      @media (max-width: 550px)
+        width: 100vw !important
     .half
       width: 50vw
+      @media (max-width: 550px)
+        width: 100vw !important
     .two-third
       width: 66vw
+      @media (max-width: 550px)
+        width: 100vw !important
     .tall
       height: 510px
+      @media (max-width: 550px)
+        height: 250px
+
 
 
 footer
   display: flex
   margin: 20px 40px
   @media (max-width: 730px)
-    display: none
+    flex-direction: column
   .col-1
     flex-grow: 1
     h3
@@ -151,6 +167,5 @@ footer
   .col-2
     display: flex
     flex-direction: column
-    // flex-grow: 1
-  .col-2:last-child
-    flex-grow: 0
+    @media (max-width: 730px)
+      display: none
