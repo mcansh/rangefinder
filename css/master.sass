@@ -56,6 +56,10 @@ nav
     display: flex
     justify-content: center
     align-items: center
+    +transition()
+    cursor: pointer
+    &:hover
+      background: lighten($red, 10)
     a
       font-size: 1.5em
       color: white
@@ -76,8 +80,59 @@ nav
 
 main
   width: calc(100vw - 40px)
-  padding: 20px
+  padding: 40px 20px
   background: $off-white
+  min-height: 100vh
+  margin-top: 80px
+  .row
+    display: flex
+    justify-content: center
+    align-items: center
+    .img
+      margin: 10px
+      height: 250px
+      +transition()
+      cursor: pointer
+      &:hover
+        opacity: .8
+      figcaption
+        display: flex
+        flex-direction: column
+        height: 100%
+        width: 100%
+        color: white
+      .bottom-right
+        justify-content: flex-end
+        align-items: flex-end
+        h3,p
+          padding-right: 20px
+        p
+          padding-bottom: 20px
+      .bottom-left
+        @extend .bottom-right
+        align-items: flex-start
+        h3,p
+          padding-left: 20px
+          padding-right: 0px
+      .top-left
+        @extend .bottom-right
+        align-items: flex-start
+        justify-content: flex-start
+        h3,p
+          padding-left: 20px
+          padding-right: 0px
+        h3
+          padding-top: 20px
+        p
+          padding-bottom: 0px
+    .one-third
+      width: 33vw
+    .half
+      width: 50vw
+    .two-third
+      width: 66vw
+    .tall
+      height: 510px
 
 
 footer
