@@ -138,7 +138,10 @@ main {
       height: 250px;
       -webkit-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
-      cursor: pointer; }
+      cursor: pointer;
+      background-image: url();
+      background-size: cover;
+      background-position: center; }
       main .row .img:hover {
         opacity: 0.8; }
       @media (max-width: 550px) {
