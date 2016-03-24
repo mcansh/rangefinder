@@ -204,17 +204,17 @@ main {
       width: 33vw; }
       @media (max-width: 550px) {
         main .row .one-third {
-          width: 100vw !important; } }
+          width: 95vw !important; } }
     main .row .half {
       width: 50vw; }
       @media (max-width: 550px) {
         main .row .half {
-          width: 100vw !important; } }
+          width: 95vw !important; } }
     main .row .two-third {
       width: 66vw; }
       @media (max-width: 550px) {
         main .row .two-third {
-          width: 100vw !important; } }
+          width: 95vw !important; } }
     main .row .tall {
       height: 510px; }
       @media (max-width: 550px) {
@@ -238,7 +238,7 @@ footer {
     width: 50vw; }
     @media (max-width: 730px) {
       footer .col-1 {
-        width: 100vw; } }
+        width: inherit; } }
     footer .col-1 h3 {
       color: #DB4553;
       padding-bottom: 40px; }
