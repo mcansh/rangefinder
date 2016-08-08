@@ -106,10 +106,13 @@ nav {
 
 nav.scrolled {
   margin: 0;
-  padding: 10px 20px;
+  padding: 20px 80px;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px); }
+  @media (max-width: 730px) {
+    nav.scrolled {
+      padding: 10px 20px; } }
   nav.scrolled .left a:hover {
     color: white; }
   nav.scrolled a {
