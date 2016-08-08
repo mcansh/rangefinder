@@ -1,0 +1,58 @@
+nav
+  display: flex
+  align-items: center
+  margin: 20px 80px
+  text-align: center
+  transition: $transition
+  +position(fixed, 0 0 null 0)
+  @media (max-width: 730px)
+    margin: 10px 20px
+  @media (max-width: 400px)
+    font-size: .8em
+  @media (max-width: 350px)
+    font-size: 10px
+  .left
+    flex-grow: 1
+    .logo
+      background: $red
+      border-radius: 50%
+      width: 75px
+      height: 75px
+      display: flex
+      justify-content: center
+      align-items: center
+      transition: $transition
+      cursor: pointer
+      &:hover
+        background: lighten($red, 10)
+      a
+        font-size: 1.5em
+        color: white
+  a
+    margin: 0 10px
+    text-transform: uppercase
+
+  .btn
+    border: 2px solid $red
+    padding: 5px 10px
+    color: $red
+    border-radius: 2px
+    transition: $transition
+    &:hover
+      background: $red
+      color: white
+
+nav.scrolled
+  // width: 100vw
+  margin: 0
+  padding: 10px 20px
+  z-index: 3
+  background-color: rgba(0, 0, 0, 0.5)
+  -webkit-backdrop-filter: blur(10px)
+  .left
+    a:hover
+      color: white
+  a
+    color: white
+    &:hover
+      color: $red
